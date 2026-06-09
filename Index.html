@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+<title>Ghostify — Dropshipping IA</title>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;1,9..144,300&family=DM+Sans:opsz,wght@9..40,400;9..40,600&display=swap" rel="stylesheet"/>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2527584002466358" crossorigin="anonymous"></script>
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html,body{background:#fff;color:#111;font-family:'DM Sans',system-ui,sans-serif;-webkit-font-smoothing:antialiased}
+
+header{height:60px;padding:0 32px;display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid #eee;position:sticky;top:0;background:#fff;z-index:100}
+.logo{display:flex;align-items:center;gap:9px;cursor:pointer;user-select:none}
+.logo-icon{width:32px;height:32px;background:#111;border-radius:8px;display:flex;align-items:center;justify-content:center}
+.logo-icon svg{width:18px;height:18px;fill:#fff}
+.logo-name{font-family:'Fraunces',Georgia,serif;font-size:18px;font-weight:300;letter-spacing:-.02em;color:#111}
+.btn-header{background:#111;color:#fff;border:none;padding:9px 20px;border-radius:8px;font-size:14px;font-weight:600;cursor:pointer;font-family:'DM Sans',sans-serif}
+
+.ad-top{border-bottom:1px solid #eee;padding:10px;text-align:center}
+.ad-lbl{font-size:10px;color:#ccc;display:block;margin-bottom:4px;text-transform:uppercase;letter-spacing:.06em}
+
+.hero{padding:90px 24px 70px;text-align:center}
+.hero h1{font-family:'Fraunces',Georgia,serif;font-size:clamp(40px,6vw,64px);font-weight:300;line-height:1.08;letter-spacing:-.03em;color:#111;margin-bottom:16px}
+.hero h1 em{font-style:italic;color:#2D6A4F}
+.hero p{font-size:17px;color:#666;margin-bottom:44px;line-height:1.6}
+
+.gen-wrap{display:flex;gap:10px;max-width:520px;margin:0 auto 16px}
+.gen-input{flex:1;border:1.5px solid #ddd;border-radius:10px;padding:14px 16px;font-size:15px;font-family:'DM Sans',sans-serif;color:#111;outline:none;background:#fff}
+.gen-input:focus{border-color:#111}
+.gen-input::placeholder{color:#bbb}
+.btn-gen{background:#2D6A4F;color:#fff;border:none;padding:14px 22px;border-radius:10px;font-size:15px;font-weight:700;cursor:pointer;font-family:'DM Sans',sans-serif;white-space:nowrap}
+.btn-gen:hover{background:#245c43}
+
+.sources{display:flex;gap:8px;justify-content:center;flex-wrap:wrap}
+.src{border:1px solid #eee;border-radius:6px;padding:4px 12px;font-size:12px;color:#888}
+.src.ok{color:#2D6A4F;border-color:#c5e0d4}
+
+.prog-wrap{max-width:520px;margin:20px auto 0;display:none}
+.prog-bg{background:#eee;border-radius:99px;height:3px;overflow:hidden}
+.prog-fill{height:100%;background:#2D6A4F;border-radius:99px;width:0;transition:width .4s}
+.prog-lbl{font-size:12px;color:#aaa;margin-top:8px;text-align:left}
+
+.plans-wrap{padding:72px 24px;max-width:760px;margin:0 auto;border-top:1px solid #eee}
+.plans-wrap h2{font-family:'Fraunces',Georgia,serif;font-size:clamp(26px,4vw,36px);font-weight:300;letter-spacing:-.02em;text-align:center;margin-bottom:40px;color:#111}
+.plans{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:16px}
+.plan{border:1.5px solid #eee;border-radius:12px;padding:28px;position:relative;background:#fff}
+.plan.top{border-color:#111}
+.plan-badge{position:absolute;top:-11px;left:50%;transform:translateX(-50%);background:#111;color:#fff;font-size:11px;font-weight:700;padding:3px 12px;border-radius:99px;white-space:nowrap}
+.plan-name{font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:.1em;color:#aaa;margin-bottom:8px}
+.plan-price{font-family:'Fraunces',Georgia,serif;font-size:32px;font-weight:300;color:#111;margin-bottom:4px}
+.plan-price small{font-size:13px;font-family:'DM Sans',sans-serif;color:#aaa}
+.plan-feat{list-style:none;margin:16px 0 24px;display:flex;flex-direction:column;gap:7px}
+.plan-feat li{font-size:13px;color:#666;display:flex;gap:7px}
+.plan-feat li::before{content:'✓';color:#2D6A4F;font-weight:700;flex-shrink:0}
+.plan-note{font-size:12px;color:#aaa;margin-bottom:20px;border-top:1px solid #eee;padding-top:12px}
+.btn-plan{width:100%;padding:11px;border-radius:8px;font-size:14px;font-weight:600;cursor:pointer;font-family:'DM Sans',sans-serif;border:1.5px solid #ddd;background:#fff;color:#111}
+.btn-plan:hover{border-color:#111}
+.btn-plan.dark{background:#111;color:#fff;border-color:#111}
+
+.promo-wrap{border-top:1px solid #eee;padding:40px 24px;text-align:center}
+.promo-wrap p{font-size:14px;color:#aaa;margin-bottom:14px}
+.promo-row{display:flex;gap:8px;max-width:320px;margin:0 auto}
+.promo-input{flex:1;border:1.5px solid #ddd;border-radius:8px;padding:10px 14px;font-size:14px;font-family:'DM Sans',sans-serif;outline:none;color:#111;background:#fff}
+.promo-input:focus{border-color:#111}
+.btn-promo{background:#111;color:#fff;border:none;padding:10px 18px;border-radius:8px;font-size:14px;font-weight:600;cursor:pointer;font-family:'DM Sans',sans-serif}
+.promo-ok{color:#2D6A4F;font-size:13px;margin-top:10px;display:none}
+.promo-err{color:#c0392b;font-size:13px;margin-top:10px;display:none}
+
+footer{border-top:1px solid #eee;padding:32px 24px 100px;text-align:center}
+.f-logo{font-family:'Fraunces',Georgia,serif;font-size:18px;font-weight:300;color:#111;margin-bottom:10px}
+footer p{font-size:12px;color:#ccc;line-height:1.9}
+footer a{color:#ccc;text-decoration:none}
+footer a:hover{color:#111}
+
+.ad-sticky{position:fixed;bottom:0;left:0;right:0;background:#fff;border-top:1px solid #eee;padding:8px;text-align:center;z-index:200}
+.ad-close{position:absolute;right:12px;top:50%;transform:translateY(-50%);background:none;border:none;font-size:20px;color:#ccc;cursor:pointer}
+
+.modal-bg{position:fixed;inset:0;background:rgba(0,0,0,.35);backdrop-filter:blur(6px);z-index:500;display:none;align-items:center;justify-content:center;padding:20px}
+.modal-bg.open{display:flex}
+.modal{background:#fff;border-radius:16px;padding:36px;max-width:400px;width:100%;position:relative}
+.modal-x{position:absolute;top:14px;right:16px;background:none;border:none;font-size:22px;color:#ccc;cursor:pointer}
+.modal-url{border:1px solid #eee;border-radius:8px;padding:10px 14px;font-size:13px;color:#2D6A4F;font-weight:600;margin-bottom:22px;word-break:break-all}
+.modal h2{font-family:'Fraunces',Georgia,serif;font-size:24px;font-weight:300;margin-bottom:4px;color:#111}
+.modal-sub{font-size:14px;color:#888;margin-bottom:22px}
+.tabs{display:flex;gap:8px;margin-bottom:18px}
+.tab-btn{flex:1;padding:8px;border:1.5px solid #eee;border-radius:7px;background:#fff;font-family:'DM Sans',sans-serif;font-size:13px;font-weight:600;cursor:pointer;color:#aaa}
+.tab-btn.on{border-color:#111;color:#111}
+.field{width:100%;border:1.5px solid #eee;border-radius:8px;padding:12px 14px;font-size:15px;font-family:'DM Sans',sans-serif;color:#111;outline:none;margin-bottom:10px;background:#fff}
+.field:focus{border-color:#111}
+.field::placeholder{color:#ccc}
+.btn-auth{width:100%;background:#111;color:#fff;border:none;padding:13px;border-radius:9px;font-size:15px;font-weight:700;cursor:pointer;font-family:'DM Sans',sans-serif;margin-top:4px}
+.auth-err{background:#fff0f0;border:1px solid #fcc;color:#c0392b;border-radius:7px;padding:9px 13px;font-size:13px;margin-bottom:10px;display:none}
+.modal-foot{font-size:12px;color:#ccc;text-align:center;margin-top:12px}
+
+@media(max-width:520px){.gen-wrap{flex-direction:column}}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="logo" id="logo">
+    <div class="logo-icon">
+      <svg viewBox="0 0 24 24"><path d="M12 2C7.6 2 4 5.6 4 10v10l2.5-2.5L9 20l2.5-2.5L14 20l2.5-2.5L19 20V10c0-4.4-3.6-8-7-8zm0 11a3 3 0 110-6 3 3 0 010 6z"/></svg>
+    </div>
+    <span class="logo-name">Ghostify</span>
+  </div>
+  <button class="btn-header" onclick="openModal()">Créer mon compte</button>
+</header>
+
+<div class="ad-top">
+  <span class="ad-lbl">Publicité</span>
+  <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-2527584002466358" data-ad-slot="5308101334" data-ad-format="auto" data-full-width-responsive="true"></ins>
+</div>
+
+<section class="hero">
+  <h1>Génère ta boutique<br/><em>en 30 secondes</em></h1>
+  <p>Colle ton lien produit. L'IA fait le reste.</p>
+
+  <div class="gen-wrap">
+    <input class="gen-input" id="linkInput" type="url" placeholder="Colle ton lien ici…"/>
+    <button class="btn-gen" id="btnGen">Générer →</button>
+  </div>
+
+  <div class="sources">
+    <span class="src ok">✓ AliExpress</span>
+    <span class="src ok">✓ CJ Dropshipping</span>
+    <span class="src ok">✓ Temu</span>
+  </div>
+
+  <div class="prog-wrap" id="progWrap">
+    <div class="prog-bg"><div class="prog-fill" id="progFill"></div></div>
+    <div class="prog-lbl" id="progLbl">Analyse du produit…</div>
+  </div>
+</section>
+
+<section class="plans-wrap">
+  <h2>Simple. Sans engagement.</h2>
+  <div class="plans">
+    <div class="plan">
+      <div class="plan-name">Free</div>
+      <div class="plan-price">0€ <small>/ mois</small></div>
+      <ul class="plan-feat">
+        <li>1 boutique active</li>
+        <li>10 templates</li>
+        <li>Commission 9%</li>
+      </ul>
+      <div class="plan-note">Logo de marque intégrable</div>
+      <button class="btn-plan" onclick="openModal()">Commencer</button>
+    </div>
+    <div class="plan top">
+      <div class="plan-badge">Plus populaire</div>
+      <div class="plan-name">Pro</div>
+      <div class="plan-price">9,99€ <small>/ mois</small></div>
+      <ul class="plan-feat">
+        <li>10 boutiques actives</li>
+        <li>30 templates premium</li>
+        <li>Commission 6%</li>
+        <li>Label privé</li>
+      </ul>
+      <div class="plan-note">Logo + identité de marque complète</div>
+      <button class="btn-plan dark" onclick="openModal()">Choisir Pro</button>
+    </div>
+    <div class="plan">
+      <div class="plan-name">Ultimate</div>
+      <div class="plan-price">19,99€ <small>/ mois</small></div>
+      <ul class="plan-feat">
+        <li>Boutiques illimitées</li>
+        <li>50+ templates</li>
+        <li>Commission 3%</li>
+        <li>Support dédié</li>
+      </ul>
+      <div class="plan-note">Logo + marque + packaging personnalisé</div>
+      <button class="btn-plan" onclick="openModal()">Choisir Ultimate</button>
+    </div>
+  </div>
+</section>
+
+<section class="promo-wrap">
+  <p>Tu as un code promo ?</p>
+  <div class="promo-row">
+    <input class="promo-input" id="promoInp" type="text" placeholder="LEGHOST10"/>
+    <button class="btn-promo" onclick="applyPromo()">Appliquer</button>
+  </div>
+  <div class="promo-ok" id="promoOk"></div>
+  <div class="promo-err" id="promoErr">Code invalide.</div>
+</section>
+
+<footer>
+  <div class="f-logo">Ghostify</div>
+  <p><a href="#">CGU</a> · <a href="#">Confidentialité</a> · <a href="#">Contact</a><br/>© 2025 Ghostify. Tous droits réservés.</p>
+</footer>
+
+<div class="ad-sticky" id="adSticky">
+  <button class="ad-close" onclick="document.getElementById('adSticky').style.display='none'">×</button>
+  <ins class="adsbygoogle" style="display:inline-block;width:320px;height:50px" data-ad-client="ca-pub-2527584002466358" data-ad-slot="4178515784"></ins>
+</div>
+
+<div class="modal-bg" id="modal">
+  <div class="modal">
+    <button class="modal-x" id="modalX">×</button>
+    <div class="modal-url" id="previewUrl">ghostify.fr/ta-boutique-ia</div>
+    <h2 id="mTitle">Crée ton compte</h2>
+    <p class="modal-sub" id="mSub">Gratuit — aucune carte requise.</p>
+    <div class="tabs">
+      <button class="tab-btn on" id="tabS" onclick="switchTab('s')">Inscription</button>
+      <button class="tab-btn" id="tabL" onclick="switchTab('l')">Connexion</button>
+    </div>
+    <div class="auth-err" id="authErr"></div>
+    <input class="field su-only" id="authName" type="text" placeholder="Ton prénom"/>
+    <input class="field" id="authEmail" type="email" placeholder="Adresse e-mail"/>
+    <input class="field" id="authPass" type="password" placeholder="Mot de passe"/>
+    <button class="btn-auth" id="btnAuth">Accéder à mon site →</button>
+    <p class="modal-foot" id="mFoot">Aucune carte requise · 100% gratuit</p>
+  </div>
+</div>
+
+<script>
+(adsbygoogle=window.adsbygoogle||[]).push({});
+(adsbygoogle=window.adsbygoogle||[]).push({});
+const $=id=>document.getElementById(id);
+const PROMOS={'LEGHOST10':'1 mois PRO offert','GHOST2026':'20% de réduction à vie'};
+const STEPS=['Analyse du produit…','Récupération des données…','Génération de la page…','Finalisation…'];
+let tab='s',genUrl='',lc=0,lt;
+
+$('btnGen').addEventListener('click',startGen);
+$('linkInput').addEventListener('keypress',e=>{if(e.key==='Enter')startGen();});
+
+function startGen(){
+  const v=$('linkInput').value.trim();
+  if(!v){$('linkInput').style.borderColor='#e63946';setTimeout(()=>$('linkInput').style.borderColor='#ddd',1000);return;}
+  $('btnGen').disabled=true;$('btnGen').textContent='Génération…';
+  $('progWrap').style.display='block';
+  let p=0,si=0;
+  const iv=setInterval(()=>{
+    p+=Math.random()*18+4;
+    if(p>=100){p=100;clearInterval(iv);setTimeout(()=>{openModal();resetGen();},500);}
+    $('progFill').style.width=p+'%';
+    $('progLbl').textContent=STEPS[Math.min(si++,STEPS.length-1)];
+  },500);
+  genUrl='ghostify.fr/'+v.replace(/https?:\/\//,'').replace(/[^a-z0-9]/gi,'-').slice(0,32).toLowerCase();
+}
+function resetGen(){$('btnGen').disabled=false;$('btnGen').textContent='Générer →';$('progWrap').style.display='none';$('progFill').style.width='0';}
+function openModal(){$('previewUrl').textContent=genUrl||'ghostify.fr/ta-boutique-ia';$('modal').classList.add('open');}
+$('modalX').addEventListener('click',()=>$('modal').classList.remove('open'));
+$('modal').addEventListener('click',e=>{if(e.target===$('modal'))$('modal').classList.remove('open');});
+function switchTab(t){
+  tab=t;
+  $('tabS').classList.toggle('on',t==='s');$('tabL').classList.toggle('on',t==='l');
+  document.querySelectorAll('.su-only').forEach(el=>el.style.display=t==='s'?'block':'none');
+  $('mTitle').textContent=t==='s'?'Crée ton compte':'Content de te revoir';
+  $('mSub').textContent=t==='s'?'Gratuit — aucune carte requise.':'Connecte-toi pour accéder à ton espace.';
+  $('btnAuth').textContent=t==='s'?'Accéder à mon site →':'Me connecter →';
+  $('mFoot').textContent=t==='s'?'Aucune carte requise · 100% gratuit':'Pas encore de compte ? Inscris-toi.';
+  $('authErr').style.display='none';
+}
+$('btnAuth').addEventListener('click',()=>{
+  const err=$('authErr'),mail=$('authEmail').value.trim(),pass=$('authPass').value.trim(),name=$('authName').value.trim();
+  err.style.display='none';
+  if(!mail||!pass){err.textContent='Remplis tous les champs.';err.style.display='block';return;}
+  if(tab==='s'&&!name){err.textContent="Entre ton prénom.";err.style.display='block';return;}
+  alert('✅ Bienvenue sur Ghostify !');$('modal').classList.remove('open');
+});
+function applyPromo(){
+  const c=$('promoInp').value.trim().toUpperCase();
+  if(PROMOS[c]){$('promoOk').textContent='✓ '+PROMOS[c]+' appliqué !';$('promoOk').style.display='block';$('promoErr').style.display='none';}
+  else{$('promoErr').style.display='block';$('promoOk').style.display='none';}
+}
+$('logo').addEventListener('click',()=>{
+  lc++;clearTimeout(lt);
+  if(lc>=3){lc=0;const pw=prompt('Admin :');if(pw==='GhostMaster2025!')alert('✅ Accès admin.');else if(pw)alert('❌ Incorrect.');}
+  else lt=setTimeout(()=>lc=0,600);
+});
+</script>
+</body>
+</html>
